@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>LearnHub 🎓</h1>
+</header>
+
+<section class="container">
+
+  <!-- Video Section -->
+  <div class="card">
+    <h2>📺 Video Lesson</h2>
+    <video controls width="300">
+      <source src="sample.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="card">
+    <h2>📝 Quiz</h2>
+    <p>What is HTML?</p>
+    <button onclick="checkAnswer('a')">A. Markup Language</button>
+    <button onclick="checkAnswer('b')">B. Programming Language</button>
+    <p id="result"></p>
+  </div>
+
+  <!-- Progress -->
+  <div class="card">
+    <h2>📊 Progress</h2>
+    <div class="progress">
+      <div id="bar"></div>
+    </div>
+    <button onclick="updateProgress()">Complete Lesson</button>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
